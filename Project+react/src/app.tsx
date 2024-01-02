@@ -1,23 +1,21 @@
-import React, { useEffect, useState } from "react";
 import "./app.css";
 import { Route, Routes } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import { toastError, toastSuccess } from "./utils/toast";
 import { ToastContainer } from "react-toastify";
 import DefaultLayout from "./layout/defaultLayout/defaultLayout";
-import HomeMain from "./components/homeMain/homeMain";
-import ProductDetail from "./components/productDetail/productDetail";
-import UserCartDetail from "./components/userCartDetail/userCartDetail";
-import UserPage from "./components/userPage/userPage";
-import { useDispatch, useSelector } from "react-redux";
+import HomeMain from "./components/userHome/homeMain";
+import ProductDetail from "./components/userProductDetail/productDetail";
+import UserCartDetail from "./components/userCart/userCartDetail";
 import LoginLayout from "./layout/loginLayout/loginLayout";
 import AdminLayout from "./layout/adminLayout/adminLayout";
 import AdminDashboard from "./components/adminDashboard/adminDashboard";
-import AdminLoginPage from "./components/adminLoginPage/adminLoginPage";
-import AdminOrderPage from "./components/adminOrderPage/adminOrderPage";
-import AdminProductPage from "./components/adminProductPage/adminProductPage";
+import ComingSoon from "./components/comingSoon/commingSoon";
+import UserHistory from "./components/userCartHistory/cartHistory";
+import AdminLogin from "./layout/adminLoginLayout/adminLogin";
 import AdminUserPage from "./components/adminUserPage/adminUserPage";
-import { request } from "graphql-request";
+import AdminOrders from "./components/adminOrdersPage/adminOrderPage";
+import AdminProducts from "./components/adminProductsPage/adminProductsPage";
+import P404Layout from "./layout/error/404Layout";
 function App() {
   return (
     <div>
@@ -25,11 +23,11 @@ function App() {
       <Routes>
         <Route path="/" element={<DefaultLayout child={<HomeMain />} />} />
         <Route
-          path="/adminPage"
-          element={<AdminLayout child={<AdminDashboard />} />}
+          path="/comingSoon"
+          element={<DefaultLayout child={<ComingSoon />} />}
         />
         <Route
-          path="/product"
+          path="/product/:id"
           element={<DefaultLayout child={<ProductDetail />} />}
         />
         <Route path="/login" element={<LoginLayout />} />
@@ -37,8 +35,29 @@ function App() {
           path="/cart"
           element={<DefaultLayout child={<UserCartDetail />} />}
         />
-        <Route path="/user" element={<DefaultLayout child={<UserPage />} />} />
-        <Route path="/*" element={<DefaultLayout child={<>Not Found</>} />} />
+        <Route
+          path="/profile"
+          element={<DefaultLayout child={<UserHistory />} />}
+        />
+        <Route path="/adminLogin" element={<AdminLogin />} />
+        <Route
+          path="/adminPage"
+          element={<AdminLayout child={<AdminDashboard />} />}
+        />
+        <Route
+          path="/adminUsers"
+          element={<AdminLayout child={<AdminUserPage />} />}
+        />
+        <Route
+          path="/adminOrders"
+          element={<AdminLayout child={<AdminOrders />} />}
+        />
+        <Route
+          path="/adminProducts"
+          element={<AdminLayout child={<AdminProducts />} />}
+        />
+
+        <Route path="/*" element={<P404Layout />} />
       </Routes>
     </div>
   );

@@ -7,6 +7,11 @@
     flex-direction: column;
 }
 
+.side_admin_index.active {
+    color: #42BBFF;
+
+}
+
 .admin_logo {
     padding: 30px;
 }

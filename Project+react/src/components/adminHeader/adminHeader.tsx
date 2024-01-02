@@ -1,26 +1,107 @@
-import React from "react";
-import { IoIosSearch } from "react-icons/io";
-import { IoPeople } from "react-icons/io5";
-import { IoNotifications } from "react-icons/io5";
+import { useEffect, useState } from "react";
 import "./adminHeader.css";
-const AdminHeader = () => {
+import { CiUser } from "react-icons/ci";
+import { IoMdSearch } from "react-icons/io";
+import { PiClockThin } from "react-icons/pi";
+import { PiPhoneCallThin } from "react-icons/pi";
+import { PiShoppingCartSimpleLight } from "react-icons/pi";
+import UserService from "../../services/user.service";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate, Link } from "react-router-dom";
+import Profile from "../userProfile/profile";
+import { logout } from "../../store/reducers/user";
+import { RiLogoutBoxRLine } from "react-icons/ri";
+import { Modal } from "antd";
+import ProductService from "../../services/product.service";
+import { IProduct } from "../../types/interface";
+import { toastError } from "../../utils/toast";
+
+const Header = (): JSX.Element => {
+  const [count, setCount] = useState<number>(0);
+  const [char, setChar] = useState<string>("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const idUser = localStorage.getItem("idUser") as string;
+  const userService = new UserService();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const status = useSelector((state: any) => state.update);
+  const [profile, setProfile] = useState<boolean>(false);
+  let goToDetail = useNavigate();
+
+  useEffect(() => {
+    const getUser = async () => {
+      if (idUser) {
+        const data: any = await userService.getUserById(Number(idUser));
+        let fullName: any = data.data.fullName;
+        let lastName: string =
+          fullName.split(" ")[fullName.split(" ").length - 1];
+        let character: string = lastName.charAt(0);
+        setCount(data.data.cart.length);
+        setChar(character);
+        console.log(character);
+      } else {
+        navigate("/adminLogin");
+        toastError("Please Login first to access.");
+      }
+    };
+    getUser();
+  }, [status]);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+    dispatch(logout());
+    navigate("/adminLogin", { state: "logout" });
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+  const offProfile = (): void => {
+    setProfile(false);
+  };
+
   return (
-    <header className="admin_head">
-      <button className="admin_search_button">
-        <input
-          type="text"
-          className="admin_search_input"
-          placeholder="Search..."
-        />
-        <IoIosSearch color="#50556A" />
-      </button>
-      <div className="admin_tool">
-        {/* <IoPeople />
-        <IoNotifications /> */}
-        <div className="admin_avatar">B</div>
+    <>
+      <div className="admin_head">
+        <div className="header_search">
+          {/* <div className="search_bar_box">
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              className="admin_search_input"
+            />
+            <a href="#mini_search" className="admin_search_button">
+              <IoMdSearch className="reactIcon" />
+            </a>
+          </div> */}
+        </div>
+        <div className="header_user_services">
+          <div className="header_border" />
+          <div className="header_user toolTip" id="user_avatar">
+            <Link to={"/"} className="user_avatar_box">
+              {char}
+            </Link>
+          </div>
+          <div className="header_user toolTip" id="logout_btn">
+            <RiLogoutBoxRLine onClick={showModal} />
+            <span className="toolTipText" style={{ marginTop: 17 }}>
+              Logout
+            </span>
+          </div>
+        </div>
+        {profile && <Profile offProfile={offProfile} />}
       </div>
-    </header>
+      <Modal
+        title="Are you sure you want to Log-out ?"
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        className="modalConfirm"
+      />
+    </>
   );
 };
-
-export default AdminHeader;
+export default Header;

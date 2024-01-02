@@ -1,11 +1,11 @@
 export interface IProduct {
   id?: number;
-  Productname: string;
+  productName: string;
   desc: string;
   price: number;
   stock: number;
   img: string;
-  isDelete: number;
+  isDelete: boolean;
   category: string;
   scale: string;
   brand: string;
@@ -26,22 +26,27 @@ export interface IOrderDetail {
   idProducts: number;
   price: number;
   quantity: number;
-  name: string;
+  productName: string;
 }
 export interface IOrder {
   id?: number;
   idUser: number;
-  totalPrice: number;
+  userName: string;
+  phone: string;
+  address: string;
+  totalPrice?: number | undefined;
   status: number;
-  orderDetails: IOrderDetail[];
+  date: string;
+  orderDetails?: ICart[] | undefined;
 }
 export interface IUser {
   id?: number;
   email: string;
+  fullName: string;
   avatar: string;
   password: string;
   role: number;
-  status: number;
+  status: boolean;
   phone: string;
   address: string;
   cart: ICart[];

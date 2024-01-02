@@ -21,5 +21,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-right: 50px;
+    padding-right: 80px;
+    padding-top: 20px;
 }

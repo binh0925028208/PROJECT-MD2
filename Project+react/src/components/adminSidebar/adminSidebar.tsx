@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./adminSidebar.css";
 import { BsFillBarChartFill, BsFillBox2Fill } from "react-icons/bs";
 import { IoPeopleSharp } from "react-icons/io5";
 import { LuClipboardEdit } from "react-icons/lu";
-import { TbLogout2 } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const AdminSidebar = () => {
+  const navigate = useNavigate();
+  const [activeButton, setActiveButton] = useState("");
+  const handleButtonClick = (state: string) => {
+    setActiveButton(state);
+    navigate(`/${state}`);
+  };
+
   return (
     <div className="admin_sidebar">
       <div className="admin_logo">
@@ -15,20 +21,37 @@ const AdminSidebar = () => {
         />
       </div>
       <div className="admin_category">
-        <button>
+        <button
+          onClick={() => handleButtonClick("adminPage")}
+          className={`side_admin_index ${
+            activeButton === "adminPage" ? "active" : ""
+          }`}
+        >
           <BsFillBarChartFill /> Dashboard
         </button>
-        <button>
-          <IoPeopleSharp /> Customers
+        <button
+          onClick={() => handleButtonClick("adminUsers")}
+          className={`side_admin_index ${
+            activeButton === "adminUsers" ? "active" : ""
+          }`}
+        >
+          <IoPeopleSharp /> Users
         </button>
-        <button>
+        <button
+          onClick={() => handleButtonClick("adminProducts")}
+          className={`side_admin_index ${
+            activeButton === "adminProducts" ? "active" : ""
+          }`}
+        >
           <BsFillBox2Fill /> Products
         </button>
-        <button>
+        <button
+          onClick={() => handleButtonClick("adminOrders")}
+          className={`side_admin_index ${
+            activeButton === "adminOrders" ? "active" : ""
+          }`}
+        >
           <LuClipboardEdit /> Orders
-        </button>
-        <button>
-          <TbLogout2 /> Logout
         </button>
       </div>
     </div>

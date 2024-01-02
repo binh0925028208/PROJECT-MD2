@@ -17,7 +17,7 @@ export default function AdminLayout(props: Props) {
       <div className="wrapper_adminLayout_body">
         <AdminHeader />
         <div className="content_adminLayout">
-          <AdminDashboard />
+          <div>{props.child}</div>
         </div>
       </div>
     </div>

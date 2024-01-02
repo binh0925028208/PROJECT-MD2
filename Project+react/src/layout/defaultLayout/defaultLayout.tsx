@@ -1,9 +1,7 @@
-import React from "react";
-import Header from "../../components/header/header";
-import Sidebar from "../../components/sideMenu/sideMenu";
+import Header from "../../components/userHeader/header";
 import "./defaultLayout.css";
-import Footer from "../../components/footer/footer";
-import HomeVideo from "../../components/homeVideo/homeVideo";
+import Footer from "../../components/userFooter/footer";
+import HomeVideo from "../../components/userVideo/homeVideo";
 
 interface Props {
   child: JSX.Element;
@@ -16,7 +14,7 @@ export default function DefaultLayout(props: Props) {
         <Header />
       </div>
       <div className="wrapper_layout_body">
-        <div className="content_layout">{props.child}</div>
+        <div>{props.child}</div>
       </div>
       <div className="footer_layout">
         <HomeVideo />

@@ -1,10 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { countSlice } from "./reducers/count";
 import { userSlice } from "./reducers/user";
+import updateReducer from "./reducers/update";
 
 const rootReducer = combineReducers({
-  count: countSlice.reducer, // Đảm bảo bạn sử dụng counterSlice.reducer
   user: userSlice.reducer,
+  update: updateReducer.reducer,
 });
 
 export const store = configureStore({

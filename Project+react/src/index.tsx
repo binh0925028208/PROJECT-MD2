@@ -5,6 +5,7 @@ import App from "./app";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,11 +13,14 @@ const root = ReactDOM.createRoot(
 root.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <PayPalScriptProvider
+        options={{
+          clientId:
+            "AYmeMII_udXSt2zcqyZxF-XL1dwINozZlpE__Q0iEABtCwvTremfvngc70TwO3uUQhd9uFyw4Tuts-__",
+        }}
+      >
+        <App />
+      </PayPalScriptProvider>
     </BrowserRouter>
   </Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

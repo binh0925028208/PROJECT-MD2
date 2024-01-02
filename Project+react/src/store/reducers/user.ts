@@ -1,15 +1,12 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
 import UserService from "../../services/user.service";
-import { toastError, toastSuccess } from "../../utils/toast";
 
 export const handleLogin = createAsyncThunk(
-  "user/fetchById",
-  async (formData: any) => {
+  "login",
+  async (formRequest: any) => {
     try {
-      const userService = new UserService();
-      const response: any = await userService.login(formData);
-      console.log(response);
+      const userService: UserService = new UserService();
+      const response = await userService.login(formRequest);
       localStorage.setItem("token", response.data.accessToken);
       localStorage.setItem("idUser", response.data.user.id);
       return response;
@@ -19,15 +16,18 @@ export const handleLogin = createAsyncThunk(
   }
 );
 
-export const userSlice: any = createSlice({
-  name: "User",
+export const userSlice = createSlice({
+  name: "login",
   initialState: {
     loading: false,
+    error: false,
     data: undefined,
   },
   reducers: {
     logout: (state) => {
       state.data = undefined;
+      localStorage.removeItem("token");
+      localStorage.removeItem("idUser");
     },
   },
   extraReducers: (builder) => {
@@ -40,7 +40,4 @@ export const userSlice: any = createSlice({
     });
   },
 });
-
-export const {} = userSlice.actions;
-
-export default userSlice.reducer;
+export const { logout } = userSlice.actions;

@@ -2,36 +2,52 @@
   "users": [
     {
       "email": "1@gmail.com",
-      "password": "$2a$10$lAXxei/CwT2OJgefyehmK.I.4.KhjHbJHma9SYZx8MKmI3gYGdupu",
-      "address": "123123123",
+      "password": "$2a$10$/0LCAX1Yln1L2ywP/6oReOLqjkVRJtnk9ZKCm/iBpUN7g6JGJOJya",
+      "fullName": "Bình",
+      "address": "Bnasdnansd",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20user%2Favatar-trang-4.jpg?alt=media&token=da8f7c53-e039-4a0c-b30b-ddbf7084adf9",
       "role": 1,
-      "status": 1,
-      "phone": "",
+      "status": true,
+      "phone": "0101010101",
       "cart": [],
       "id": 1
     },
     {
-      "email": "2@gmail.com",
-      "password": "$2a$10$XN/gzl7YdK7E30820s99beFjHBSVEQAfcf0UE2C3FFIKe9TCJickC",
-      "address": "ádascasc",
-      "role": 1,
-      "status": 1,
-      "phone": "0909090909",
+      "email": "Binh0906465289@gmail.com",
+      "password": "$2a$10$x/Q1jhT9bCerr1tPVfdRtu162fWIi1G/HWwyoz0YCd30DfH5wqFCm",
+      "fullName": "Nguyễn Bình",
+      "address": "123phanboi, đà nẵng",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20user%2Favatar-trang-4.jpg?alt=media&token=da8f7c53-e039-4a0c-b30b-ddbf7084adf9",
+      "role": 2,
+      "status": true,
+      "phone": "09250282028",
       "cart": [],
       "id": 2
+    },
+    {
+      "email": "3@gmail.com",
+      "password": "$2a$10$5BQqd6myjzwXDxRVnOZQ5.nT1F/SEl3nTvCvMDTaI.Imfuu20SxOu",
+      "fullName": "văn A",
+      "address": "10 lê lợi, hà nội",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20user%2Favatar-trang-4.jpg?alt=media&token=da8f7c53-e039-4a0c-b30b-ddbf7084adf9",
+      "role": 1,
+      "status": true,
+      "phone": "09090909090",
+      "cart": [],
+      "id": 3
     }
   ],
-  "Product": [
+  "products": [
     {
       "id": 1,
-      "productName": "Hi-resolution Astray Gundam",
+      "productName": "astrayyyy",
       "price": 75,
-      "stock": 10,
+      "stock": 8,
       "scale": "hr",
       "brand": "Bandai",
       "scaleDetail": "Hi-Resolution",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_1.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_1.jpg?alt=media&token=cb3c0fe6-83a7-41ab-b2c1-fe7b23e6dece",
       "desc": "A pre-assembled frame using die-cast has been adopted. The color division of the pre-assembled hand parts have been recreated. Certain sections of the frame have also adopted muscle-like forms, and other sections have emboss processing applied to create texture. The Gerbera straight has had emboss processing and plating applied to recreate the tempered patterns. The armor on the upper arm slides as the arm moves. The pre-painted and pre-assembled frame was created using die-cast, recreating an intricate texture and heft. The armor on the shoulder blades is linked to the movements of the arms. Different open hand pareds are included for left and right hands. The layered structures of the frame and armor create dense movements. Details that resemble the shape of muscles have also been recreated. The big toes on each foot are divided for articulation to recreate poses where the kit is stepping in. Certain sections have had emboss processing applied, creating surface textures that give density to its design."
     },
     {
@@ -42,20 +58,20 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_2.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_2.jpg?alt=media&token=4ce2673b-7ad9-4475-bd73-a7968d60290a",
       "desc": "The SD EX-Standard series is a revitalization of the Super Deformed Gundam style, which features chibi sized Gundams. The new EX-Standard series has stronger proportions for the limbs which allow increased articulation."
     },
     {
       "id": 3,
       "productName": "RG God Gundam",
       "price": 30,
-      "stock": 10,
+      "stock": 9,
       "scale": "rg",
       "brand": "Bandai",
       "scaleDetail": "Real Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_3.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_3.jpg?alt=media&token=6b720f18-22c6-4f17-abb8-6b1b07fd42d2",
       "desc": "Pursue movements that trace the human body unique to mobile fighters. With the advanced MS joints introduced in the shoulders and wrists, you can reproduce the characteristic 'arms crossed' pose. Equipped with a movable axis on the base of the nail and the thumb cover to reproduce the god finger. Original arranged sun effect is included"
     },
     {
@@ -66,8 +82,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_4.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_4.jpg?alt=media&token=b38e2217-6656-459e-98db-72a3d2439f44",
       "desc": "The Gundam Exia as it appeared in the original Mobile Suit Gundam 00. In addition to a GN Sword, includes the GN Longblade and Shortblade variants to expand your display possibilities! The huge GN Sword can be displayed stowed away as well. [Set Contents]Main Body, Optional pair of hands, GN Sword, GN Longblade, GN Shortblade, Tamashii Stage Joint. Look for origin of shipment: Only items shipped from within North America are being sold by authorized U.S. Retailers. The product box will have a Bluefin / Bandai Namco warning label, which is proof that you are purchasing an officially licensed Bandai product, distributed by its sole and authorized distributor (Bluefin) for the U.S. Markets. This product has been thoroughly tested for safety and meets all North American consumer product safety regulations. The affixed label also entitles the purchaser to product support assistance within the United States."
     },
     {
@@ -78,8 +94,8 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_5.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_5.jpg?alt=media&token=984cce30-7a89-4084-a0a7-0a7a56b8553d",
       "desc": "Cute chibi form of the Full Amor Unicorn Gundam with its full payload of weapons. A new mold that allows leg and elbow articulation and retains the ability to transform between Unicorn and Destroy mode also allows the ability to switch between pupil eyes and eye sensors"
     },
     {
@@ -90,8 +106,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_6.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_6.jpg?alt=media&token=6133b38f-40a7-455b-a328-aa1ee51bc550",
       "desc": "This Bombardment Type Gundam from Gundam seed was created with new styling in celebration of the 10th anniversary of Gundam seed. The iconic combining gimmick between the high energy rifle and gun launcher has been perfectly recreated to allow display of a very large combined projectile gun. Hatches for missile pods can be opened to reveal individual colored missiles. Runner x 12, foil sticker x1, dry decal x1, Instruction manual x1"
     },
     {
@@ -102,8 +118,8 @@
       "scale": "pg",
       "brand": "Bandai",
       "scaleDetail": "Perfect Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_7.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_7.jpg?alt=media&token=a7cc57d8-bd25-45a3-a0f8-48e899a414da",
       "desc": "The latest Perfect Grade, Perfect Grade Gundam Exia has arrived! Biggest feature of this kit, the 'GN Drive', was under supervision of Mechanical Designer Ebike Kanetake. The mechanism in which the GN particles transmit from the GN Drive throughout the whole body has been replicated. Contents include: 40 runners, 1 sheet of marking stickers, 1 sheet of metallic stickers, 1 sheet of foil stickers, 1 sheet of dry transfer decals, 2 sheets of silicone."
     },
     {
@@ -114,8 +130,8 @@
       "scale": "mb",
       "brand": "Bandai",
       "scaleDetail": "Metal Build",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_8.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_8.jpg?alt=media&token=8b59c8ef-0e00-43dd-9205-56804ed223f5",
       "desc": "The birth of the Metal Build series, which began with 00 Gundam Seven Sword in March 2011 was nothing less than a game changer for high-end robot action figures. A year after the initial release, Metal Build will continue with the Freedom Gundam from the Gundam SEED series"
     },
     {
@@ -126,8 +142,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_9.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_9.jpg?alt=media&token=ca9ca1d9-d1af-4992-87f0-64e1cb421711",
       "desc": "replacement wrist, GN sword, GN Long Blade, GN Short Blade, GN beam saber. Gunpla is a dimensionalized plastic model of mobile suits that appears"
     },
     {
@@ -138,8 +154,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_10.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_10.jpg?alt=media&token=0e604e72-d141-4dfd-a7e7-dc1a5ce59448",
       "desc": "A Musha styled Gundam from the Gundam Build Fighters anime, based on the HG Red Frame Astray. Featuring 2 katanas mounted on hidden additional arms in the shoulder binders, this custom Gundam also features a devil shield on its back that can be hand held. With numerous samurai like parts this crazy Gundam is also compatible with the Matsuri Weapon set to make this themed Gundam even more powerful! Includes Kiku-ichimonji and Kotetsu katanas, Devil shield."
     },
     {
@@ -150,8 +166,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_11.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_11.jpg?alt=media&token=9b594579-a45c-48d3-b27a-37c92cad96bc",
       "desc": "Here it is, the main MS from the Iron-Blooded Orphans series! This fully-articulated and snap-together kit will come with the suit and its first two weapons, the hammer pike and the sword, and you'll also be able to add other accessories with add-on packs as the show and suit progress! You'll also be able to choose from two modes to display the kit in, and you'll be able to combine and modify the suit with other kits from the same line in the future!s"
     },
     {
@@ -162,8 +178,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_12.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_12.jpg?alt=media&token=6863e0ac-8057-4cce-b3ea-904c771c2a0b",
       "desc": "A customized God Gundam that uses leg moves for its finisher is here! [Set Contents] Beam Blade x2"
     },
     {
@@ -174,8 +190,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_13.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_13.jpg?alt=media&token=42f9df32-a4f4-4e25-8eaa-c235e3d58bc0",
       "desc": "A customized God Gundam that uses leg moves for its finisher is here! [Set Contents] Beam Blade x2, Beam Tonfa x2,Grip for Beam Saber x2, Kick effect parts x1, Foil stickers x1, Hand parts x1 set"
     },
     {
@@ -186,8 +202,8 @@
       "scale": "rg",
       "brand": "Bandai",
       "scaleDetail": "Real Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_14.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_14.jpg?alt=media&token=ead44197-2d29-4c88-8efe-1fb3a89a8e32",
       "desc": "Real Grade version of the Gundam Exia combines the intricate part complexity of the higher end MG and PG lines with the size and affordability of the HG and SD lines into a new product that draws inspiration from real world. This version of the Exia was supervised by its creator Kanetake Ebikawa and features custom markings. All of Exia's equipment is included, with melee weapons having chromed blades and GN condensers feature transparent plastic. New Advanced MS Joint allows feats of impressive movement to replicate combat scenes in the Gundam 00 anime series."
     },
     {
@@ -198,8 +214,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_15.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_15.jpg?alt=media&token=277e0ad7-7d56-495e-a9a7-9742ddde53c4",
       "desc": "Started ahead of the latest Gundam series [Mobile Suit Gundam: Witch of Mercury]!! Two MSs that are active in the prequel [PROLOGUE] of the main story appear a little early! Shell units are ion mold parts and clear parts. selection formula. The in-mold parts express the brilliance of the chest shell unit and reproduce the luminous state, and the clear parts reproduce the non-luminous state. The shield can be separated into 7 bit staves and connected to the backpack and receiver gun. It is possible to attach a huge beam blade effect part to the receiver gun. Colorful finish just by assembling due to discerning parts division."
     },
     {
@@ -210,8 +226,8 @@
       "scale": "rg",
       "brand": "Bandai",
       "scaleDetail": "Real Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_16.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_16.jpg?alt=media&token=3be76e06-8417-49ad-a1c3-43f27e36e863",
       "desc": "Second unit used in the last half of Gundam Seed Destiny features the characteristic Advanced MS Joint System to allow for distinctive mid air poses and realistic mechanical detail. Full load out of weapons including being rifle, palm cannons, high energy beam cannon, composite shield, beam shield, anti ship sword, beam boomerang and beam sabers are included"
     },
     {
@@ -222,8 +238,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_17.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_17.jpg?alt=media&token=81ebc5cf-0736-40ec-b1df-40726678812f",
       "desc": "Product DETAILS duel Gundam equipped with the Assault shroud joins the MG series. The new X-100 frames allow the kit an incredible range of motion, even when it wears the Assault shroud. The mechanical design for mg is newly drawn. The cockpit hatch in the chest can be opened and the inside of the cockpit is faithfully recreated. The Assault shroud can [of course] be attached or detached. 15 runners, 1 foil sticker sheet, 1 Gundam decal sheet, instruction manual"
     },
     {
@@ -234,8 +250,8 @@
       "scale": "rs",
       "brand": "Bandai",
       "scaleDetail": "Robot Spirits",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_18.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_18.jpg?alt=media&token=6c4401e8-5e8f-4010-bd85-4c83f000fe03",
       "desc": "The Master Gundam, which battled Burning Gundam in Mobile Fighter G Gundam, joins Gundam Universe!"
     },
     {
@@ -246,8 +262,8 @@
       "scale": "mb",
       "brand": "Bandai",
       "scaleDetail": "Metal Build",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_19.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_19.jpg?alt=media&token=014f9466-884c-43d0-be19-085c4226a85d",
       "desc": "A beast joins the Gundam Universe: Gundam Barbatos Lupus Rex! The tail blade is detachable from the back, and can be combined with a Tamashii STAGE stand (sold separately) to re-create dramatic attacks! A super-posable Ultra Large Mace is included as well. Stands approximately 6.3"
     },
     {
@@ -258,8 +274,8 @@
       "scale": "rs",
       "brand": "Bandai",
       "scaleDetail": "Robot Spirits",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_20.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_20.jpg?alt=media&token=47ab8ddc-2b7a-4e3b-9ef5-4e3d57845dd5",
       "desc": "From the movie Mobile Suit Gundam00 -Awakening of the Trailblazer comes Setsuna F. Seieis GNT-0000 00 QAN[T] Standing approximately 6 tall, it boasts the large size, dynamic sculpting, and play value youve come to expect from Gundam Universe! [Set Contents] Main body, Optional pair of hands, GN Sword V, GN Sword bit set, Tamashii STAGE joint part set. Look for origin of shipment: Only items shipped from within North America are being sold by authorized U.S. Retailers. The product box will have a Bandai Namco warning label, which is proof that you are purchasing an officially licensed Bandai Spirits product, distributed by its sole and authorized distributor (Bandai Namco) for the U.S. Markets. This product has been thoroughly tested for safety and meets all North American consumer product safety regulations. The affixed label also entitles the purchaser to product support assistance within the United States"
     },
     {
@@ -270,8 +286,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_21.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_21.jpg?alt=media&token=e547a68f-e800-44d8-a486-b15a9c2978ef",
       "desc": "Kabushiki-gaisha Bandai is a Japanese producer of many plastic model kits as well as a former video game company. Some ex-Bandai group companies produce anime and tokusatsu programs. All bandai kits are precision crafted and provide a stimulating building experience. Wether you want a quick super fun SD build to display, or all the class and scale brought by Master Grade Series, Bandai has a model for you!"
     },
     {
@@ -282,8 +298,8 @@
       "scale": "rg",
       "brand": "Bandai",
       "scaleDetail": "Real Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_22.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_22.jpg?alt=media&token=eefbd6a4-d074-4de2-b7b9-abc0b068b485",
       "desc": "Product DETAILS msz-006 Zeta Gundam appears as the 10th RG model kit. The newly adopted advanced ms joints Enable to expand the range of motion. Many gimmicks of the RG real system Can be found such as the opening and closing of the cockpit hatch and more. 13 runner, realistic decal, and instruction manual"
     },
     {
@@ -294,8 +310,8 @@
       "scale": "rg",
       "brand": "Bandai",
       "scaleDetail": "Real Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_23.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_23.jpg?alt=media&token=16f1b743-4f4a-4434-9252-aaef8a2950ee",
       "desc": "The crimson Mobile Suit Sinanju, piloted by  the leader of the Sleeves, Full Frontal, has finally launched in the RG line-up! The model includes movable rear-mounted thrusters, which are based on the thrust control mechanisms of real rocket engines and internal skeletal detailed from drawings by Hajime Katoki. The texture of the brilliant gold engravings have been faithfully recreated as individual parts while the its main body is made in a glossy red plastic"
     },
     {
@@ -306,8 +322,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_24.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_24.jpg?alt=media&token=9149f6ed-a818-4863-8180-45204538f59e",
       "desc": "Banshee Norn in its Destroy mode configuration with all new translucent orange frame parts. Beam magnum with revolving launcher can mount a beam jitter and also comes with spare magazine clip. Armed Armor XC and Armed Armor DE are fully deployed"
     },
     {
@@ -318,8 +334,8 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_25.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_25.jpg?alt=media&token=212d04ad-b35d-4124-882d-1d9d2248c767",
       "desc": "The globally popular Wing Gundam Zero TV Ver. will be available as a completely new design Comes with a wide variety of weapons. Enjoy posing the figure with the Twin Buster Rifle aimed. Customization unique to plastic model kits can be enjoyed by combining armaments."
     },
     {
@@ -330,8 +346,8 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_26.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_26.jpg?alt=media&token=4db1bc9d-2060-4bd8-be4b-71890c6fd3c1",
       "desc": "SD GUNDAM Figure from Banpresto!"
     },
     {
@@ -342,8 +358,8 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_27.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_27.jpg?alt=media&token=6e78f34b-da1d-46e8-8ae8-ae5e42f1c1dd",
       "desc": "Cute small version of the hi nu gundam reproduced in elegant super deformed appearance features switchable Eye part's beam rifle hyper bazooka, 2 removable funnels with shooting effect part, beam saber and also display stand"
     },
     {
@@ -354,8 +370,8 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_28.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_28.jpg?alt=media&token=94f39ef8-777e-448b-802f-aae303d27ddb",
       "desc": "Cute chibi styled version of the Unicorn Gundam as it appears in the BB senshi series with medieval attire. Can convert between forms just like the original Unicorn Gundam and is compatible with the previously released BB Legend Knight Gundam to make a centaur like form"
     },
     {
@@ -366,8 +382,8 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_29.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_29.jpg?alt=media&token=0b58d6a2-f541-4d9e-8289-036f8b901759",
       "desc": "Sun Shangxiang Strike Rouge: SD Sangoku Soketsuden x Bandai SD Model Kit"
     },
     {
@@ -378,8 +394,8 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_30.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_30.jpg?alt=media&token=42ef9922-2e39-45c8-bed1-9c427471e23d",
       "desc": "This is a plastic model kit and assembly is required. Made in Japan [Accessories] Sword x 1 Facial expression hand (right) x 1 Clear parts x 1 set Foil seal x 1"
     },
     {
@@ -390,8 +406,8 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_31.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_31.jpg?alt=media&token=c2fa2f95-e206-4dea-9e96-759152836845",
       "desc": "Gunpla is a dimensionalized plastic model of mobile suits that appears in the series of Mobile Suit Gundam, robots and battleships called mobile armour. Since they were born in 1980 as 1/144 Gundam, 445 million units of them have been sold"
     },
     {
@@ -402,8 +418,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_32.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_32.jpg?alt=media&token=d6f139eb-5171-4c82-9e1e-dac4dc4a08af",
       "desc": "The forbidden side of the universal century” that leads to mobile suit Gundam: Chars Counterattack is coming to the HG Series line-up!  based on a story concept that led to the creation of the hit series Gundam unicorn, mobile suit moon Gundam Is being written by writer harutoshi Fukui, with mechanical design by ippei gyobu who did a number of Gundam Iron-Blooded Orphans And reconguista in G Mobile suits"
     },
     {
@@ -414,8 +430,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_33.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_33.jpg?alt=media&token=604dc6dd-a3b4-481d-95df-d215b03491fb",
       "desc": "Gundam Asmodeus, one of the 72 Gundam Frame units, will be available for the first time! The extending/retracting gimmick of Grand Tonfas on the arms can be recreated by exchanging parts. The anchor gimmick of Gigant Javelin can be recreated with a wire. The Rifle can be mounted onto the rear skirt. Certain parts of the back thrusters can be moved. New armor parts and certain new frame parts have been used to recreate its design. Includes: Rifle ×1, Gigant Javelin ×1, Grand Tonfas ×2, Wire ×1, Stickers ×1."
     },
     {
@@ -426,8 +442,8 @@
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_34.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_34.jpg?alt=media&token=058faa38-0ab0-4258-b70d-3ab2b19c80c4",
       "desc": "HG Mobile Suit Gundam: Iron-Blooded Orphans 1/144 Gundam Astaroth Plastic Model"
     },
     {
@@ -438,8 +454,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_35.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_35.jpg?alt=media&token=eb06b521-a86d-4424-8baf-1a568f75e160",
       "desc": "The Providence Gundam, the God who bears the noise of Thunder on his back, has now launched in the mg line-up! The Providence Gundam shares its genealogy with the freedom Gundam and utilizes some of the same frame parts incorporating a highly Dynamic joint structure and balanced proportion."
     },
     {
@@ -450,8 +466,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_36.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_36.jpg?alt=media&token=8901b7bf-010a-45a2-819b-368b0fe8e36e",
       "desc": "From the TV series Gundam Seed, the Justice Gundam has finally been made into a Master Grade kit!  Justice Gundams multipurpose sublifter with movable beam cannons and machine cannons, the Fatum-00,  can be configured into different flight positions on back and also as a flying mount for it to stand on.  Pair with MG Freedom 2.0 and MG Providence to complete ZAFTs Gundam Seed lineup!"
     },
     {
@@ -462,8 +478,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_37.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_37.jpg?alt=media&token=f53225b7-b0a9-4fe5-95fc-d35dadd0925b",
       "desc": "The long awaited Gundam dynamic from Gundam 00 is finally available as a master grade. The model has an all new Inner frame and can easily recreate its iconic sniper poses. Runner x 17, Sticker x 1 and manual x 1."
     },
     {
@@ -474,8 +490,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_38.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_38.jpg?alt=media&token=f906563e-57b9-4722-a1f8-520b697b23b5",
       "desc": "This modern version of the Nu Gundam has been designed by esteemed mechanical designer Hajime Katoki as part of the G-Dome at the Gundam Front Tokyo exhibit. Featuring new modeling technology refined since the original MG Nu Gundam release, this Ver. Ka incorporates new gimmicks such as foldable tabs on weapons to allow for better gripping and a head with light up eyes using an LED (sold separately)."
     },
     {
@@ -486,8 +502,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_39.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_39.jpg?alt=media&token=74919514-1c50-4673-8f87-d2f7e5fc6f06",
       "desc": "The massive intimidating power of the Hi-Nu Gundam from the novel Char's Counterattack Beltorchika Children appears once more in Bandai's popular Master Grade series line! Based on its original aggressive illustration, this Ver. Ka brings its original proportions into modern kit form."
     },
     {
@@ -498,8 +514,8 @@
       "scale": "mg",
       "brand": "Bandai",
       "scaleDetail": "Master Grade",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_40.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_40.jpg?alt=media&token=23594c38-bf1b-4994-9e71-e562c717d63b",
       "desc": "This xFrom the OVA series, Gundam unicorn, comes this highly detailed and fully transformable model kit of the titular Gundam. Features translucent pink plastic that glows under UV black light to simulate the nt-d mode and sliding panels for transformation to unicorn mode. Comes with beam Magnum, bazooka, beam sabers. Ova version of Gundam unicorn features Molded vulcans in the head, an extra v-fin, differeng Caution markings, Blue beam sabers and different leg parts to allow farther bending of the knee"
     },
     {
@@ -510,8 +526,8 @@
       "scale": "hr",
       "brand": "Bandai",
       "scaleDetail": "Hi-Resolution",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_41.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_41.jpg?alt=media&token=84333aef-a695-4299-ada7-5820ebb28b10",
       "desc": "A Bandai Hobby P-Bandai Online Shop exclusive release of the Wing Gundam from Gundam Wing in its EW appearance. New opening gimmicks have been incorporated into the design of the wings while still allowing it to be able to transform into Bird Mode. The Hi-Resolution model series comes with a combination plastic and diecast pre-built frame that offers extraordinary detailing and posing capabilities."
     },
     {
@@ -522,8 +538,8 @@
       "scale": "hr",
       "brand": "Bandai",
       "scaleDetail": "Hi-Resolution",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_42.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_42.jpg?alt=media&token=bcb3b6a1-483e-4c37-baa2-93b3b159505c",
       "desc": "A new hybrid product that combines the premium high end stylized die-cast figure format with the signature construction of GunPla! Features preassembled mechanical skeleton with die-cast in the joints and functional areas such as pistons to provide both weight and stability when static or in dynamic poses! Outer armor and weapons are traditional GunPla parts that can attach to the mechanical skeleton and features a mixture of different finishes including metallic pearl, gloss, and matte to recreate the appearance of different mechanical textures. Includes Smooth Bore Gun and Sword weapons along with 6 interchangeable hand parts. Runner x 13."
     },
     {
@@ -534,8 +550,8 @@
       "scale": "hr",
       "brand": "Bandai",
       "scaleDetail": "Hi-Resolution",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_43.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_43.jpg?alt=media&token=a54ff7a9-cf96-4b53-bc6a-30fd65fa95a7",
       "desc": "The impressive wing Gundam zero from the OVA Gundam wing: endless Waltz is getting the hi-resolution BAN216746 treatment!  based on its new appearance in the Gundam wing EW manga, it now features a transforming Neo-Bird mode, opening armor gaps for zero system use, and 6 wings"
     },
     {
@@ -546,8 +562,8 @@
       "scale": "ms",
       "brand": "Bandai",
       "scaleDetail": "Mega Size",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_44.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_44.jpg?alt=media&token=4cc42c8e-9eec-45a9-8fb3-ce399689e809",
       "desc": "This is the official goods of Gundam Front Tokyo. Is linked with the specification of the life-size Gundam 18m statue, it is a limited specification that reproduced the magnet coating specifications of the Gundam statue"
     },
     {
@@ -558,8 +574,8 @@
       "scale": "ms",
       "brand": "Bandai",
       "scaleDetail": "Mega Size",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_45.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_45.jpg?alt=media&token=c12d94b6-ac16-4836-8237-095f1d5257f4",
       "desc": "This is the official goods of Gundam Front Tokyo. Is linked with the specification of the life-size Gundam 18m statue, it is a limited specification that reproduced the magnet coating specifications of the Gundam statue"
     },
     {
@@ -570,8 +586,8 @@
       "scale": "rs",
       "brand": "Bandai",
       "scaleDetail": "Robot Spirits",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_46.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_46.jpg?alt=media&token=7854f419-7a83-4320-ae20-d2ff83e28655",
       "desc": "The Gundam GP00 Blossom was an experimental Mobile Suit developed by Anaheim Electronics as part of the Gundam Development Project. It was piloted into battle almost immediately after assembly, loaded with prototype weaponry designed to assist in the defense of Livermore Factory."
     },
     {
@@ -582,8 +598,8 @@
       "scale": "rs",
       "brand": "Bandai",
       "scaleDetail": "Robot Spirits",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_47.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_47.jpg?alt=media&token=7e436591-2d96-4c35-8d95-2330b15f006d",
       "desc": "The RX-78GP04G GUNDAM GP04 GERBERA joins the ver. A.N.I.M.E. series! In the anime, it was designed as part of the Anaheim Electronics Gundam Development Project, with a great deal of feedback from former Zeonic employees. Designed for high speed attack capabilities, it was never formally approved and the prototype eventually recycled into the Gerbera Tetra. [Set Contents] Main body, Four pairs of optional hands, Hand storage deck, Sturm Booster (L, R, center), Long range rifle, Shield, Extra Gatling guns (x2), Shield joint, Various effect parts."
     },
     {
@@ -594,8 +610,8 @@
       "scale": "rs",
       "brand": "Bandai",
       "scaleDetail": "Robot Spirits",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_48.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_48.jpg?alt=media&token=e0fdeb07-ad87-456e-bb2c-cdfd9878672c",
       "desc": "It possesses both excellent firepower and close-combat capabilities. With Nimbus Schterzen at the controls, it is designed to exceed the abilities of the BLUE DESTINY UNIT 1."
     },
     {
@@ -606,8 +622,8 @@
       "scale": "rs",
       "brand": "Bandai",
       "scaleDetail": "Robot Spirits",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_49.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_49.jpg?alt=media&token=81bfe2cf-800f-4111-8ba1-5b4738be9f6b",
       "desc": "roduct Description Gundam Vidal, a Gundam frame bearing the name of a masked man, appears in the METAL ROBOT soul. The proportions that imaged in the play are a heavy finish that reproduces the hunter edges of the frame and legs with metal. The exterior is matte painted and marked to give it a realistic presence. Well-thought-out movable performance and three types of eye light effects faithfully reproduce the dynamic action in the play"
     },
     {
@@ -618,10 +634,151 @@
       "scale": "rs",
       "brand": "Bandai",
       "scaleDetail": "Robot Spirits",
-      "isDelete": 1,
-      "img": "../Assets/img_product/sp_50.jpg",
+      "isDelete": true,
+      "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_50.jpg?alt=media&token=4c813217-5f6f-4631-b182-0aa5a2674d45",
       "desc": "The FA-78-1 FULL ARMOR GUNDAM ver. A.N.I.M.E. comes with a fully detachable set of armor and weapon effect parts that make it a highly valuable addition to the Robot Spirits (Robot Spirits ver. A.N.I.M.E.) figure line for Mobile Suit Gundam. This figure adds on additional armor and weapons to the ROBOT SPIRITS RX-78-2 GUNDAM ver. A.N.I.M.E. that was used as its base. Use the various option parts to create dynamic scenes!"
     }
   ],
-  "Admin": []
+  "admins": [],
+  "orders": [
+    {
+      "address": "123123123",
+      "phone": "ádasdasdasd",
+      "idUser": "1",
+      "userName": "ádasdasd",
+      "status": 1,
+      "date": "30-11-2023",
+      "orderDetails": [
+        {
+          "id": 4,
+          "productName": "HG GN-001 Exia Gundam",
+          "price": 22,
+          "stock": 10,
+          "scale": "hg",
+          "brand": "Bandai",
+          "scaleDetail": "High Grade",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_4.jpg?alt=media&token=b38e2217-6656-459e-98db-72a3d2439f44",
+          "desc": "The Gundam Exia as it appeared in the original Mobile Suit Gundam 00. In addition to a GN Sword, includes the GN Longblade and Shortblade variants to expand your display possibilities! The huge GN Sword can be displayed stowed away as well. [Set Contents]Main Body, Optional pair of hands, GN Sword, GN Longblade, GN Shortblade, Tamashii Stage Joint. Look for origin of shipment: Only items shipped from within North America are being sold by authorized U.S. Retailers. The product box will have a Bluefin / Bandai Namco warning label, which is proof that you are purchasing an officially licensed Bandai product, distributed by its sole and authorized distributor (Bluefin) for the U.S. Markets. This product has been thoroughly tested for safety and meets all North American consumer product safety regulations. The affixed label also entitles the purchaser to product support assistance within the United States.",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 22,
+      "id": 1
+    },
+    {
+      "address": "ádasd",
+      "phone": "zxczxcaw",
+      "idUser": "1",
+      "userName": "12312312",
+      "status": 1,
+      "date": "30-11-2023",
+      "orderDetails": [
+        {
+          "id": 1,
+          "productName": "Hi-resolution Astray Gundam",
+          "price": 75,
+          "stock": 10,
+          "scale": "hr",
+          "brand": "Bandai",
+          "scaleDetail": "Hi-Resolution",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_1.jpg?alt=media&token=cb3c0fe6-83a7-41ab-b2c1-fe7b23e6dece",
+          "desc": "A pre-assembled frame using die-cast has been adopted. The color division of the pre-assembled hand parts have been recreated. Certain sections of the frame have also adopted muscle-like forms, and other sections have emboss processing applied to create texture. The Gerbera straight has had emboss processing and plating applied to recreate the tempered patterns. The armor on the upper arm slides as the arm moves. The pre-painted and pre-assembled frame was created using die-cast, recreating an intricate texture and heft. The armor on the shoulder blades is linked to the movements of the arms. Different open hand pareds are included for left and right hands. The layered structures of the frame and armor create dense movements. Details that resemble the shape of muscles have also been recreated. The big toes on each foot are divided for articulation to recreate poses where the kit is stepping in. Certain sections have had emboss processing applied, creating surface textures that give density to its design.",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 150,
+      "id": 2
+    },
+    {
+      "address": "124123eqwadasd",
+      "phone": "1231231234123123",
+      "idUser": "1",
+      "userName": "213123123",
+      "status": 1,
+      "date": "30-11-2023",
+      "orderDetails": [
+        {
+          "id": 8,
+          "productName": "Metal Build Freedom Gundam",
+          "price": 85,
+          "stock": 10,
+          "scale": "mb",
+          "brand": "Bandai",
+          "scaleDetail": "Metal Build",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_8.jpg?alt=media&token=8b59c8ef-0e00-43dd-9205-56804ed223f5",
+          "desc": "The birth of the Metal Build series, which began with 00 Gundam Seven Sword in March 2011 was nothing less than a game changer for high-end robot action figures. A year after the initial release, Metal Build will continue with the Freedom Gundam from the Gundam SEED series",
+          "quantity": 1
+        },
+        {
+          "id": 9,
+          "productName": "HG Gundam Avalanche Exia",
+          "price": 35,
+          "stock": 10,
+          "scale": "hg",
+          "brand": "Bandai",
+          "scaleDetail": "High Grade",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_9.jpg?alt=media&token=ca9ca1d9-d1af-4992-87f0-64e1cb421711",
+          "desc": "replacement wrist, GN sword, GN Long Blade, GN Short Blade, GN beam saber. Gunpla is a dimensionalized plastic model of mobile suits that appears",
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "productName": "PG Exia gundam",
+          "price": 85,
+          "stock": 10,
+          "scale": "pg",
+          "brand": "Bandai",
+          "scaleDetail": "Perfect Grade",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_7.jpg?alt=media&token=a7cc57d8-bd25-45a3-a0f8-48e899a414da",
+          "desc": "The latest Perfect Grade, Perfect Grade Gundam Exia has arrived! Biggest feature of this kit, the 'GN Drive', was under supervision of Mechanical Designer Ebike Kanetake. The mechanism in which the GN particles transmit from the GN Drive throughout the whole body has been replicated. Contents include: 40 runners, 1 sheet of marking stickers, 1 sheet of metallic stickers, 1 sheet of foil stickers, 1 sheet of dry transfer decals, 2 sheets of silicone.",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 205,
+      "id": 3
+    },
+    {
+      "address": "ádasdasdasdasdasdasd",
+      "phone": "áda123123123213123123123",
+      "idUser": "1",
+      "userName": "ádasdasdasd",
+      "status": 1,
+      "date": "31-11-2023",
+      "orderDetails": [
+        {
+          "id": 3,
+          "productName": "RG God Gundam",
+          "price": 30,
+          "stock": 10,
+          "scale": "rg",
+          "brand": "Bandai",
+          "scaleDetail": "Real Grade",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_3.jpg?alt=media&token=6b720f18-22c6-4f17-abb8-6b1b07fd42d2",
+          "desc": "Pursue movements that trace the human body unique to mobile fighters. With the advanced MS joints introduced in the shoulders and wrists, you can reproduce the characteristic 'arms crossed' pose. Equipped with a movable axis on the base of the nail and the thumb cover to reproduce the god finger. Original arranged sun effect is included",
+          "quantity": 1
+        },
+        {
+          "id": 1,
+          "productName": "Hi-resolution Astray Gundam",
+          "price": 75,
+          "stock": 10,
+          "scale": "hr",
+          "brand": "Bandai",
+          "scaleDetail": "Hi-Resolution",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_1.jpg?alt=media&token=cb3c0fe6-83a7-41ab-b2c1-fe7b23e6dece",
+          "desc": "A pre-assembled frame using die-cast has been adopted. The color division of the pre-assembled hand parts have been recreated. Certain sections of the frame have also adopted muscle-like forms, and other sections have emboss processing applied to create texture. The Gerbera straight has had emboss processing and plating applied to recreate the tempered patterns. The armor on the upper arm slides as the arm moves. The pre-painted and pre-assembled frame was created using die-cast, recreating an intricate texture and heft. The armor on the shoulder blades is linked to the movements of the arms. Different open hand pareds are included for left and right hands. The layered structures of the frame and armor create dense movements. Details that resemble the shape of muscles have also been recreated. The big toes on each foot are divided for articulation to recreate poses where the kit is stepping in. Certain sections have had emboss processing applied, creating surface textures that give density to its design.",
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 180,
+      "id": 4
+    }
+  ]
 }

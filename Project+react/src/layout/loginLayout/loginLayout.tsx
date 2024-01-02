@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./loginLayout.css";
-import Login from "../../components/login/login";
-import Register from "../../components/register/register";
+import Login from "../../components/userLogin/login";
+import Register from "../../components/userRegister/register";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 function LoginLayout() {
