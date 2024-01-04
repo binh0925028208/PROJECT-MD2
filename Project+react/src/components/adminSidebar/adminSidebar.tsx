@@ -15,10 +15,10 @@ const AdminSidebar = () => {
   return (
     <div className="admin_sidebar">
       <div className="admin_logo">
-        <img
+        {/* <img
           src="https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20admin%2Flogo.png?alt=media&token=e06c6c8c-d970-4e7f-9404-7113d5c204fb"
           alt=""
-        />
+        /> */}
       </div>
       <div className="admin_category">
         <button

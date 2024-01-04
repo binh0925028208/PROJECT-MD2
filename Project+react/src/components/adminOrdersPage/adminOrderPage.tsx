@@ -30,6 +30,11 @@ const AdminOrders = (): JSX.Element => {
       width: "20%",
     },
     {
+      title: "Address",
+      dataIndex: "address",
+      width: "20%",
+    },
+    {
       title: "Total price",
       dataIndex: "totalPrice",
       render: (dataIndex) => <span>$ {dataIndex}</span>,
@@ -52,7 +57,7 @@ const AdminOrders = (): JSX.Element => {
       ),
     },
     {
-      title: "Product of order",
+      title: "Product",
       dataIndex: "id",
       render: (id) => (
         <div>

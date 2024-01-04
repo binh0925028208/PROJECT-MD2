@@ -4,12 +4,13 @@ import "./adminAdd.css";
 import React, { ChangeEvent, useEffect, useState, MouseEvent } from "react";
 import { MdAddPhotoAlternate } from "react-icons/md";
 import { ToastContainer } from "react-toastify";
+import { notifyError, notifySuccess } from "../../common/toastify";
 import { IProduct } from "../../types/interface";
 import ProductService from "../../services/product.service";
 import UploadService from "../../services/uploadImg.service";
 import { useDispatch } from "react-redux";
 import { update } from "../../store/reducers/update";
-import { toastError, toastSuccess } from "../../utils/toast";
+import { toastError } from "../../utils/toast";
 interface Props {
   offModalAdd: Function;
 }
@@ -23,7 +24,6 @@ const ModalAddProducts = (props: Props) => {
     isDelete: true,
     img: "https://firebasestorage.googleapis.com/v0/b/learn-firebase-bd824.appspot.com/o/Nodata%2Fupload-image-icon.webp?alt=media&token=60b8bf2e-4b47-4079-b9e6-6974347e337c",
     desc: "",
-    category: "",
     scale: "",
     brand: "",
     scaleDetail: "",
@@ -36,13 +36,14 @@ const ModalAddProducts = (props: Props) => {
       setFile(file);
       setImages(file);
     } catch (error: any) {
-      toastError(error.response.data);
+      notifyError(error.response.data);
     }
   };
   useEffect(() => {
     return images && URL.revokeObjectURL(images.preview);
   }, [images]);
 
+  //   Validate Blur
   const handleBlurInput = (e: ChangeEvent<HTMLInputElement>) => {
     const spanElements = e.target.parentElement?.querySelector(
       ".ruleBlur"
@@ -56,6 +57,7 @@ const ModalAddProducts = (props: Props) => {
     }
   };
 
+  //   Get value new product
   const handleChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.length >= 0) {
       setNewProduct({
@@ -68,19 +70,20 @@ const ModalAddProducts = (props: Props) => {
     if (e.target.value !== "") {
       setNewProduct({
         ...newProduct,
-        category: e.target.value,
+        scale: e.target.value,
       });
     }
   };
 
+  //  Validate rule and request API
   const dispatch = useDispatch();
   const handleAddNewProduct = async () => {
     if (
       newProduct.productName === "" ||
       newProduct.desc === "" ||
-      newProduct.category === "" ||
-      newProduct.price === 9999 ||
-      newProduct.stock === 9999
+      newProduct.scale === "" ||
+      newProduct.price === 1 ||
+      newProduct.stock === 1
     ) {
       toastError("Please enter all field");
     } else {
@@ -90,7 +93,7 @@ const ModalAddProducts = (props: Props) => {
         if (file) {
           const url = await uploadService.uploadImage(
             file,
-            `Products/${newProduct.category}`
+            `Products/${newProduct.scale}`
           );
           let result = {
             ...newProduct,
@@ -98,13 +101,13 @@ const ModalAddProducts = (props: Props) => {
           };
           await productService.addProduct(result);
         } else {
-          toastError("Your image is not valid");
+          notifyError("Your image is not valid");
         }
         dispatch(update());
         props.offModalAdd();
-        toastSuccess("Added product successfully");
+        notifySuccess("Added product successfully");
       } catch (error: any) {
-        console.log(error.response.data);
+        toastError(error);
       }
     }
   };
@@ -112,7 +115,6 @@ const ModalAddProducts = (props: Props) => {
     <div className="modalAddProductsOverlay">
       <div className="modalAddProducts">
         <div className="modalAddProductsImg">
-          <img src={images?.preview ? images.preview : newProduct.img} alt="" />
           <div className="selectFile">
             <label htmlFor="photo">
               <MdAddPhotoAlternate />
@@ -134,7 +136,7 @@ const ModalAddProducts = (props: Props) => {
               onBlur={handleBlurInput}
               placeholder="Name Product"
               type="text"
-              name="name"
+              name="productName"
               id=""
             />
             <span className="ruleBlur"></span>
@@ -179,12 +181,17 @@ const ModalAddProducts = (props: Props) => {
           </div>
           <div className="modalAddProductsInput">
             <select onChange={handleChangeSelect} name="" id="">
-              <option value="">--Category--</option>
-              <option value="Cake & Deserts">Cake & Deserts</option>
-              <option value="Bread">Bread</option>
-              <option value="Burger & Pizza">Burger & Pizza</option>
-              <option value="Cookie & Biscuit">Cookie & Biscuit</option>
-              <option value="Donuts">Donuts</option>
+              <option value="">Scale</option>
+              <option value="mg">MASTER GRADE</option>
+              <option value="rg">REAL GRADE</option>
+              <option value="hg">HIGH GRADE</option>
+              <option value="hg">HIGH GRADE</option>
+              <option value="pg">PERFECT GRADE</option>
+              <option value="mb">METAL BUILD</option>
+              <option value="ms">MEGA SIZE</option>
+              <option value="rs">ROBOT SPIRIT</option>
+              <option value="sd">SUPER DEFORMED</option>
+              <option value="hr">HIGH-RESOLUTION</option>
             </select>
           </div>
         </div>
@@ -201,6 +208,7 @@ const ModalAddProducts = (props: Props) => {
           <button onClick={() => props.offModalAdd()}>CANCEL</button>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

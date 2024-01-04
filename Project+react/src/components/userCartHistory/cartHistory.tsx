@@ -22,15 +22,15 @@ const UserHistory = (): JSX.Element => {
     const getOrder = async () => {
       const data: any = await orderService.getOrder(Number(idUser));
       console.log(data);
-      let result = data.find((item: IOrder) => item.id === Number(idUser));
-      if (result.orderDetails === undefined) {
+      if (data.length === 0) {
         toastError("you didn't buy any products before!");
         navigate("/");
       } else {
-        setOrdersHistory(result.orderDetails);
+        setOrdersHistory(data.orderDetails);
         setOrder(data);
       }
     };
+    window.scroll(0, 0);
     getOrder();
   }, []);
 
@@ -76,9 +76,9 @@ const UserHistory = (): JSX.Element => {
                 <th className="h_date">
                   <span>DATE</span>
                 </th>
-                <th className="h_delete">
+                {/* <th className="h_delete">
                   <span>OPTION</span>
-                </th>
+                </th> */}
               </tr>
             </thead>
             <tbody id="history_of_user">

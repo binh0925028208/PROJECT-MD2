@@ -6,7 +6,6 @@ export interface IProduct {
   stock: number;
   img: string;
   isDelete: boolean;
-  category: string;
   scale: string;
   brand: string;
   scaleDetail: string;

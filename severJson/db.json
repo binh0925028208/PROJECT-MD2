@@ -7,7 +7,7 @@
       "address": "Bnasdnansd",
       "avatar": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20user%2Favatar-trang-4.jpg?alt=media&token=da8f7c53-e039-4a0c-b30b-ddbf7084adf9",
       "role": 1,
-      "status": true,
+      "status": false,
       "phone": "0101010101",
       "cart": [],
       "id": 1
@@ -35,18 +35,30 @@
       "phone": "09090909090",
       "cart": [],
       "id": 3
+    },
+    {
+      "email": "4@gmail.com",
+      "password": "$2a$10$QEDC1.NOcrsZskI5Bj0JxedJgUc0LtKnJw4jUXavfQx.54.V.uHJC",
+      "fullName": "đồng",
+      "address": "abvcccccc",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20user%2Favatar-trang-4.jpg?alt=media&token=da8f7c53-e039-4a0c-b30b-ddbf7084adf9",
+      "role": 1,
+      "status": true,
+      "phone": "123123123123",
+      "cart": [],
+      "id": 4
     }
   ],
   "products": [
     {
       "id": 1,
-      "productName": "astrayyyy",
+      "productName": "bhbhbhhbhbhbh",
       "price": 75,
       "stock": 8,
       "scale": "hr",
       "brand": "Bandai",
       "scaleDetail": "Hi-Resolution",
-      "isDelete": true,
+      "isDelete": false,
       "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_1.jpg?alt=media&token=cb3c0fe6-83a7-41ab-b2c1-fe7b23e6dece",
       "desc": "A pre-assembled frame using die-cast has been adopted. The color division of the pre-assembled hand parts have been recreated. Certain sections of the frame have also adopted muscle-like forms, and other sections have emboss processing applied to create texture. The Gerbera straight has had emboss processing and plating applied to recreate the tempered patterns. The armor on the upper arm slides as the arm moves. The pre-painted and pre-assembled frame was created using die-cast, recreating an intricate texture and heft. The armor on the shoulder blades is linked to the movements of the arms. Different open hand pareds are included for left and right hands. The layered structures of the frame and armor create dense movements. Details that resemble the shape of muscles have also been recreated. The big toes on each foot are divided for articulation to recreate poses where the kit is stepping in. Certain sections have had emboss processing applied, creating surface textures that give density to its design."
     },
@@ -58,7 +70,7 @@
       "scale": "sd",
       "brand": "Bandai",
       "scaleDetail": "Super Deformed",
-      "isDelete": true,
+      "isDelete": false,
       "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_2.jpg?alt=media&token=4ce2673b-7ad9-4475-bd73-a7968d60290a",
       "desc": "The SD EX-Standard series is a revitalization of the Super Deformed Gundam style, which features chibi sized Gundams. The new EX-Standard series has stronger proportions for the limbs which allow increased articulation."
     },
@@ -66,7 +78,7 @@
       "id": 3,
       "productName": "RG God Gundam",
       "price": 30,
-      "stock": 9,
+      "stock": 8,
       "scale": "rg",
       "brand": "Bandai",
       "scaleDetail": "Real Grade",
@@ -78,7 +90,7 @@
       "id": 4,
       "productName": "HG GN-001 Exia Gundam",
       "price": 22,
-      "stock": 10,
+      "stock": 8,
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
@@ -138,7 +150,7 @@
       "id": 9,
       "productName": "HG Gundam Avalanche Exia",
       "price": 35,
-      "stock": 10,
+      "stock": 9,
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
@@ -150,7 +162,7 @@
       "id": 10,
       "productName": "HG Sengoku Astray Gundam",
       "price": 25,
-      "stock": 10,
+      "stock": 9,
       "scale": "hg",
       "brand": "Bandai",
       "scaleDetail": "High Grade",
@@ -646,7 +658,7 @@
       "phone": "ádasdasdasd",
       "idUser": "1",
       "userName": "ádasdasd",
-      "status": 1,
+      "status": 3,
       "date": "30-11-2023",
       "orderDetails": [
         {
@@ -779,6 +791,82 @@
       ],
       "totalPrice": 180,
       "id": 4
+    },
+    {
+      "address": "hahahaah",
+      "phone": "19191919",
+      "idUser": "3",
+      "userName": "bình```````",
+      "status": 1,
+      "date": "2-0-2024",
+      "orderDetails": [
+        {
+          "id": 3,
+          "productName": "RG God Gundam",
+          "price": 30,
+          "stock": 9,
+          "scale": "rg",
+          "brand": "Bandai",
+          "scaleDetail": "Real Grade",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_3.jpg?alt=media&token=6b720f18-22c6-4f17-abb8-6b1b07fd42d2",
+          "desc": "Pursue movements that trace the human body unique to mobile fighters. With the advanced MS joints introduced in the shoulders and wrists, you can reproduce the characteristic 'arms crossed' pose. Equipped with a movable axis on the base of the nail and the thumb cover to reproduce the god finger. Original arranged sun effect is included",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 30,
+      "id": 5
+    },
+    {
+      "address": "adasdsad",
+      "phone": "123123123123123123",
+      "idUser": "4",
+      "userName": "ng23124124",
+      "status": 2,
+      "date": "2-0-2024",
+      "orderDetails": [
+        {
+          "id": 4,
+          "productName": "HG GN-001 Exia Gundam",
+          "price": 22,
+          "stock": 10,
+          "scale": "hg",
+          "brand": "Bandai",
+          "scaleDetail": "High Grade",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_4.jpg?alt=media&token=b38e2217-6656-459e-98db-72a3d2439f44",
+          "desc": "The Gundam Exia as it appeared in the original Mobile Suit Gundam 00. In addition to a GN Sword, includes the GN Longblade and Shortblade variants to expand your display possibilities! The huge GN Sword can be displayed stowed away as well. [Set Contents]Main Body, Optional pair of hands, GN Sword, GN Longblade, GN Shortblade, Tamashii Stage Joint. Look for origin of shipment: Only items shipped from within North America are being sold by authorized U.S. Retailers. The product box will have a Bluefin / Bandai Namco warning label, which is proof that you are purchasing an officially licensed Bandai product, distributed by its sole and authorized distributor (Bluefin) for the U.S. Markets. This product has been thoroughly tested for safety and meets all North American consumer product safety regulations. The affixed label also entitles the purchaser to product support assistance within the United States.",
+          "quantity": 2
+        },
+        {
+          "id": 10,
+          "productName": "HG Sengoku Astray Gundam",
+          "price": 25,
+          "stock": 10,
+          "scale": "hg",
+          "brand": "Bandai",
+          "scaleDetail": "High Grade",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_10.jpg?alt=media&token=0e604e72-d141-4dfd-a7e7-dc1a5ce59448",
+          "desc": "A Musha styled Gundam from the Gundam Build Fighters anime, based on the HG Red Frame Astray. Featuring 2 katanas mounted on hidden additional arms in the shoulder binders, this custom Gundam also features a devil shield on its back that can be hand held. With numerous samurai like parts this crazy Gundam is also compatible with the Matsuri Weapon set to make this themed Gundam even more powerful! Includes Kiku-ichimonji and Kotetsu katanas, Devil shield.",
+          "quantity": 1
+        },
+        {
+          "id": 9,
+          "productName": "HG Gundam Avalanche Exia",
+          "price": 35,
+          "stock": 10,
+          "scale": "hg",
+          "brand": "Bandai",
+          "scaleDetail": "High Grade",
+          "isDelete": true,
+          "img": "https://firebasestorage.googleapis.com/v0/b/project-shop-gundam.appspot.com/o/img%20product%2Fsp_9.jpg?alt=media&token=ca9ca1d9-d1af-4992-87f0-64e1cb421711",
+          "desc": "replacement wrist, GN sword, GN Long Blade, GN Short Blade, GN beam saber. Gunpla is a dimensionalized plastic model of mobile suits that appears",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 104,
+      "id": 6
     }
   ]
 }

@@ -36,7 +36,6 @@ const AdminLogin = () => {
           toastSuccess("Welcome ADMIN");
         } else {
           toastError("Sorry, this email is for user, not admin.");
-          navigate("/");
         }
       }
     }

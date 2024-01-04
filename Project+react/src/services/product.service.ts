@@ -73,13 +73,7 @@ class ProductService {
     this.updateStock(arrNeed);
     return arrNeed;
   }
-  public async getProductsCategory(value: string) {
-    const result = await this.productRepository.getAllProducts();
-    const productsCategory = result.filter(
-      (item: IProduct) => item.category === value && item.isDelete === true
-    );
-    return productsCategory;
-  }
+
   public async isDeleted(id: number, status: boolean) {
     await this.productRepository.isDeleteById(id, status);
   }

@@ -9,7 +9,7 @@ import { IUser } from "../../types/interface";
 import { useDispatch, useSelector } from "react-redux";
 import { update } from "../../store/reducers/update";
 import { notifySuccess } from "../../common/toastify";
-import AdminModalAdd from "../adminModalAdd/adminModalAdd";
+import AdminModalAdd from "../adminUserAddModal/adminModalAdd";
 import AdminService from "../../services/admin.service";
 
 interface TableParams {
@@ -258,7 +258,7 @@ const Users = (): JSX.Element => {
                             <tr key={item.id}>
                               <td>{item.fullName}</td>
                               <td>{item.email}</td>
-                              <td>{item.role === 3 ? "Admin" : "Moderator"}</td>
+                              <td>Admin </td>
                               <td className="adminsActions">
                                 {admin?.role === 3 ? (
                                   <div className="actionUsers">

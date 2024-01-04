@@ -37,6 +37,7 @@ const UserCartDetail = () => {
       setCartItems(user.data.cart);
     };
     getUser();
+    window.scroll(0, 0);
   }, [status]);
 
   // thêm giảm xóa quantity-----------

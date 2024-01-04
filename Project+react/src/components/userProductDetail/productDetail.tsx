@@ -37,6 +37,7 @@ const ProductDetail: React.FC = (): JSX.Element => {
       setSelectedScale(result.data.scale);
     };
     getProducts();
+    window.scroll(0, 0);
   }, [idProduct]);
 
   const handleAddCartDetail = async (

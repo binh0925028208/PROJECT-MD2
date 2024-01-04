@@ -4,11 +4,12 @@ import type { ColumnsType, TablePaginationConfig } from "antd/es/table";
 import type { FilterValue, SorterResult } from "antd/es/table/interface";
 import "./adminProductsPage.css";
 import ProductService from "../../services/product.service";
+import { formatPrice } from "../../common/formatPrice";
 import { IProduct } from "../../types/interface";
 import { useDispatch, useSelector } from "react-redux";
 import { update } from "../../store/reducers/update";
 import AdminUpdateProducts from "../adminUpdateModal/adminUpdate";
-import ModalAddProducts from "../adminAddModal/adminAdd";
+import AdminAddProducts from "../adminProductAddModal/adminAdd";
 
 interface TableParams {
   pagination?: TablePaginationConfig;
@@ -95,10 +96,9 @@ const Products = (): JSX.Element => {
       sorter: (a: any, b: any) => Number(a.price) - Number(b.price),
     },
     {
-      title: "Rating",
-      dataIndex: "rate",
+      title: "Scale",
+      dataIndex: "scaleDetail",
       width: "10%",
-      sorter: true,
     },
     {
       title: "Stock",
@@ -143,13 +143,13 @@ const Products = (): JSX.Element => {
             </Popconfirm>
           ) : (
             <Popconfirm
-              title="Return this Products"
-              description="Are you sure to return it?"
-              onConfirm={() => handleReturn(dataIndex)}
+              title="Re-sell this Products ?"
+              description="Are you sure to re-sell it?"
+              onConfirm={() => handleReSell(dataIndex)}
               okText="Yes"
               cancelText="No"
             >
-              <button className="btnActionUsers">Return</button>
+              <button className="btnActionUsers">Re-sell</button>
             </Popconfirm>
           )}
         </div>
@@ -170,7 +170,7 @@ const Products = (): JSX.Element => {
     await productService.isDeleted(id, false);
     dispatch(update());
   };
-  const handleReturn = async (id: number) => {
+  const handleReSell = async (id: number) => {
     await productService.isDeleted(id, false);
     dispatch(update());
   };
@@ -244,14 +244,14 @@ const Products = (): JSX.Element => {
         onChange={handleTableChange}
       />
       <div className="addProducts">
-        <button onClick={() => setModalAdd(true)} className="btnActionUsers">
+        {/* <button onClick={() => setModalAdd(true)} className="btnActionUsers">
           Add+ New Product
-        </button>
+        </button> */}
       </div>
       {modalEdit ? (
         <AdminUpdateProducts dataEdit={dataEdit} offModalEdit={offModalEdit} />
       ) : null}
-      {modalAdd ? <ModalAddProducts offModalAdd={offModalAdd} /> : null}
+      {modalAdd ? <AdminAddProducts offModalAdd={offModalAdd} /> : null}
     </section>
   );
 };

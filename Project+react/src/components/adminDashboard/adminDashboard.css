@@ -410,10 +410,8 @@ td {
 
 }
 
-.active {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: rgb(150, 148, 148);
-    color: white;
+
+
+.pieChart {
+    padding: 50px;
 }

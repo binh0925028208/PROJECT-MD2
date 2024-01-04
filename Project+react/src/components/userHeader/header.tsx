@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./header.css";
 import { CiUser } from "react-icons/ci";
-import { IoMdSearch } from "react-icons/io";
 import { PiClockThin } from "react-icons/pi";
 import { PiPhoneCallThin } from "react-icons/pi";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
@@ -51,9 +50,11 @@ const Header = (): JSX.Element => {
 
   const backHome = (): void => {
     navigate("/");
+    window.scroll(0, 0);
   };
   const comingSoon = (): void => {
     navigate("/comingsoon");
+    window.scroll(0, 0);
   };
   const showModal = () => {
     setIsModalOpen(true);
@@ -127,9 +128,9 @@ const Header = (): JSX.Element => {
               ) : (
                 ""
               )}
-              <a href="#mini_search" className="search_button">
+              {/* <button className="search_button">
                 <IoMdSearch className="reactIcon" />
-              </a>
+              </button> */}
             </div>
           </div>
           <div className="header_contract">

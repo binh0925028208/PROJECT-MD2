@@ -26,19 +26,22 @@ const Header = (): JSX.Element => {
   const navigate = useNavigate();
   const status = useSelector((state: any) => state.update);
   const [profile, setProfile] = useState<boolean>(false);
-  let goToDetail = useNavigate();
 
   useEffect(() => {
     const getUser = async () => {
       if (idUser) {
         const data: any = await userService.getUserById(Number(idUser));
+        const roleUser = data.data.role;
+        if (roleUser === 1) {
+          navigate("/adminLogin");
+          toastError("Please Login first to access.");
+        }
         let fullName: any = data.data.fullName;
         let lastName: string =
           fullName.split(" ")[fullName.split(" ").length - 1];
         let character: string = lastName.charAt(0);
         setCount(data.data.cart.length);
         setChar(character);
-        console.log(character);
       } else {
         navigate("/adminLogin");
         toastError("Please Login first to access.");
@@ -80,11 +83,7 @@ const Header = (): JSX.Element => {
         </div>
         <div className="header_user_services">
           <div className="header_border" />
-          <div className="header_user toolTip" id="user_avatar">
-            <Link to={"/"} className="user_avatar_box">
-              {char}
-            </Link>
-          </div>
+          <div className="user_avatar_box">{char}</div>
           <div className="header_user toolTip" id="logout_btn">
             <RiLogoutBoxRLine onClick={showModal} />
             <span className="toolTipText" style={{ marginTop: 17 }}>

@@ -31,7 +31,7 @@ const ProductList: React.FC<ProductProps> = ({ selectedScale }) => {
       const result = await productService.getAll();
       if (selectedScale != "") {
         const productsAfterFilter = result.data.filter(
-          (item: any) => item.scale === selectedScale
+          (item: any) => item.scale === selectedScale && item.isDelete === true
         );
         const lastIndex = currentPage * productsPerPage;
         const firstIndex = lastIndex - productsPerPage;
@@ -42,10 +42,16 @@ const ProductList: React.FC<ProductProps> = ({ selectedScale }) => {
         setAllProduct(productsAfterFilter);
         setProducts(currentProducts);
       } else {
+        const productsAfterFilter = result.data.filter(
+          (item: any) => item.isDelete === true
+        );
         const lastIndex = currentPage * productsPerPage;
         const firstIndex = lastIndex - productsPerPage;
-        const currentProducts = result.data.slice(firstIndex, lastIndex);
-        setAllProduct(result.data);
+        const currentProducts = productsAfterFilter.slice(
+          firstIndex,
+          lastIndex
+        );
+        setAllProduct(productsAfterFilter);
         setProducts(currentProducts);
       }
     };

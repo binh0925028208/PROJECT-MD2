@@ -18,7 +18,7 @@ const OrderDetail = (props: Props): JSX.Element => {
     <div className="orderDetailOverlay">
       <div className="orderDetail">
         <div className="orderDetailTitle">
-          <h1>Order Detail</h1>
+          <h2>Order Detail</h2>
           <p style={{ color: "blue" }}>
             Total: $ {props.orderById?.totalPrice}
           </p>
